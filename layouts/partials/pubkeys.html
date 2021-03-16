@@ -1,0 +1,11 @@
+{{ with .Site.Params.pubkeys -}}
+<section class="pubkeys">
+  <div class="title">Some of my public keys</div>
+  {{- range $keytype, $address := . -}}
+    <div class="pubkey">
+      <span class="text">{{ $keytype }}: <span class="address">{{ $address }}</span>
+      </span>
+    </div>
+  {{- end }}
+</section>
+{{- end }}

@@ -1,0 +1,27 @@
+.pubkeys {
+  text-align: center;
+  font-family: Roboto Mono, sans-serif;
+  margin-top: 5em;
+  margin-bottom: 1.5em;
+
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 1em;
+  }
+
+  .pubkey {
+    margin: 0.1em 1em;
+
+    .text {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      font-weight: 200;
+      white-space: nowrap;
+
+      .address {
+        color: #b6262c;
+        text-transform: lowercase;
+      }
+    }
+  }
+}
