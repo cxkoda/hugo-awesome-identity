@@ -3,8 +3,8 @@
   <div class="title">Some of my public keys</div>
   {{- range $keytype, $address := . -}}
     <div class="pubkey">
-      <span class="text">{{ $keytype }}: <span class="address">{{ $address }}</span>
-      </span>
+      <span class="addresstype">{{ $keytype }}:</span>
+      <span class="address">{{ $address }}</span>
     </div>
   {{- end }}
 </section>

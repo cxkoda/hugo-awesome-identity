@@ -11,17 +11,25 @@
 
   .pubkey {
     margin: 0.1em 1em;
+    font-size: 0.8rem;
+    font-weight: 200;
+    white-space: nowrap;
 
-    .text {
-      font-size: 0.8rem;
+    .addresstype {
+      display: inline-block;
+      vertical-align:top;
       text-transform: uppercase;
-      font-weight: 200;
-      white-space: nowrap;
+    }
 
-      .address {
-        color: #b6262c;
-        text-transform: lowercase;
-      }
+    .address {
+      display: inline-block;
+      vertical-align:top;
+      max-inline-size: 90%;
+
+      text-overflow: ellipsis;
+      overflow: hidden; 
+
+      color: #b6262c;
     }
   }
 }
